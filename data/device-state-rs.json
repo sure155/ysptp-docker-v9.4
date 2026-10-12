@@ -1,0 +1,30 @@
+{
+  "cast_model": "QA75QN900B",
+  "cloud_guid": "",
+  "profile": {
+    "android_id": "d3985be6947ba11f",
+    "board": "neo8k",
+    "brand": "Samsung",
+    "build_type": "user",
+    "device": "samsung_qa75qn900b",
+    "display": "QA75QN900B-user 13 SAMSUNGTV.2022.QN900B 2024 release-keys",
+    "fingerprint": "Samsung/samsung_qa75qn900b/samsung_qa75qn900b:13/SAMSUNGTV.2022.QN900B/2024:user/release-keys",
+    "hardware": "s5e9925",
+    "host": "samsung-tv-build",
+    "mac": "6e:54:87:3c:31:82",
+    "manufacturer": "Samsung",
+    "model": "QA75QN900B",
+    "product": "samsung_qa75qn900b",
+    "report_model": "QA75QN900B",
+    "resolution": "7680*4320",
+    "tags": "release-keys",
+    "user": "build",
+    "version_id": "SAMSUNGTV.2022.QN900B"
+  },
+  "profile_source": "samsung_8k_pool.QA75QN900B",
+  "registered_at": 0.0,
+  "schema_version": 1,
+  "screen_param": "7680-4320-260",
+  "updated_at": 1791822165.1369581,
+  "x_uid": "C2EDE2A848E1C1CBB9A91EDCFE04B4CC615A018A"
+}
