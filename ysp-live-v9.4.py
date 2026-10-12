@@ -2859,8 +2859,8 @@ def build_playlist (ch ,holdback :bool =True ):
         segs =[ch .segments [k ]for k in keys if k in ch .segments ]
     if not segs :
         return None 
-    if holdback and len (segs )>=6 :
-        display_segs =segs [:-2 ]
+    if holdback and len (segs )>=10 :
+        display_segs =segs [:-8 ]
     else :
         display_segs =segs 
     target =max (6 ,max ((int (s [1 ]+0.5 )for s in display_segs )))
