@@ -42,6 +42,12 @@
 
 ---
 
+## ⚡ 一键部署（推荐）
+```bash
+curl -sSL https://raw.githubusercontent.com/sure155/ysptp-docker-v9.4/main/install.sh | bash
+```
+> 自动拉取代码、清理旧容器、构建镜像、启动服务。部署完成后输出订阅地址。
+
 ## 🐳 Docker 版使用与升级方法
 1. 下载地址：https://garysclub.sharewithyou.dpdns.org/ysp-live/ysp-live-docker-v9.4.zip
 2. 解压后进入目录，一行命令直接全新构建并启动：
