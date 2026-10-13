@@ -7,4 +7,4 @@ COPY ysp-engine.js /app/ysp-engine.js
 RUN ln -sf /app/ysp-live-v9.4.py /app/ysp-live.py
 EXPOSE 8767
 VOLUME ["/app/data"]
-CMD ["python3", "/app/ysp-live-v9.4.py", "8767"]
+CMD ["python3", "/app/ysp-live-v9.4.py", "8767", "--no-4k"]
