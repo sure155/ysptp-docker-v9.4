@@ -2456,7 +2456,7 @@ REFRESH_INTERVAL =2
 IDLE_TIMEOUT =120 
 LINK_IDLE_TIMEOUT =30.0 
 WINDOW =900 
-MAX_SEgs =200 
+MAX_SEGS =200 
 BK_URL_TTL =300 
 BACKEND_CHANNELS ={
 'cctv1','cctv2','cctv3','cctv4','cctv5','cctv5p','cctv7','cctv8',
