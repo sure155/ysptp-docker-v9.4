@@ -2455,8 +2455,8 @@ UA ='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, 
 REFRESH_INTERVAL =2 
 IDLE_TIMEOUT =120 
 LINK_IDLE_TIMEOUT =30.0 
-WINDOW =600 
-MAX_SEGS =120 
+WINDOW =900 
+MAX_SEgs =200 
 BK_URL_TTL =300 
 BACKEND_CHANNELS ={
 'cctv1','cctv2','cctv3','cctv4','cctv5','cctv5p','cctv7','cctv8',
@@ -2727,7 +2727,7 @@ def jce_refresh (ch ):
         added =0 
         is_init =not ch .order 
         if is_init :
-            init_segs =segs [-150 :]if len (segs )>150 else segs 
+            init_segs =segs [-200 :]if len (segs )>200 else segs 
             for dur ,pdt ,url in init_segs :
                 key =seg_key (url ,pdt )
                 ch .seq +=1 
@@ -2855,12 +2855,12 @@ def build_playlist (ch ,holdback :bool =True ):
                 ch .last_built_playlist =res 
                 ch .last_built_time =time .time ()
             return res 
-        keys =list (ch .order )[-min (MAX_SEGS ,120 ):]
+        keys =list (ch .order )[-min (MAX_SEGS ,200 ):]
         segs =[ch .segments [k ]for k in keys if k in ch .segments ]
     if not segs :
         return None 
-    if holdback and len (segs )>=18 :
-        display_segs =segs [:-16 ]
+    if holdback and len (segs )>=24 :
+        display_segs =segs [:-20 ]
     else :
         display_segs =segs 
     target =max (6 ,max ((int (s [1 ]+0.5 )for s in display_segs )))
