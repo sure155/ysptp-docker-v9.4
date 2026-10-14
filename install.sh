@@ -1,5 +1,5 @@
 #!/bin/bash
-# ysp-live v9.4 一键部署脚本
+# ysp-live v9.4.1 一键部署脚本
 # 先低码 1080P → 停留后自动升高码率；VPS 场景优化版
 # --no-4k：海外 VPS 设备协议注册失败时自动回退 1080p，避免高码率超时报错
 set -e
@@ -24,7 +24,7 @@ sleep 10
 
 IP=$(curl -s --max-time 5 ifconfig.me 2>/dev/null || hostname -I | awk '{print $1}')
 echo ""
-echo "ysp-live v9.4 已部署完毕"
+echo "ysp-live v9.4.1 已部署完毕"
 echo "订阅地址: http://$IP:8767/all.m3u"
 echo "节目单订阅: http://$IP:8767/epg.xml"
 echo "实时诊断: http://$IP:8767/diag"
