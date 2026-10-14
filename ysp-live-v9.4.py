@@ -2455,8 +2455,8 @@ UA ='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, 
 REFRESH_INTERVAL =2 
 IDLE_TIMEOUT =120 
 LINK_IDLE_TIMEOUT =30.0 
-WINDOW =900 
-MAX_SEGS =200 
+WINDOW =1800
+MAX_SEGS =400
 BK_URL_TTL =300 
 BACKEND_CHANNELS ={
 'cctv1','cctv2','cctv3','cctv4','cctv5','cctv5p','cctv7','cctv8',
@@ -2855,7 +2855,7 @@ def build_playlist (ch ,holdback :bool =True ):
                 ch .last_built_playlist =res 
                 ch .last_built_time =time .time ()
             return res 
-        keys =list (ch .order )[-min (MAX_SEGS ,200 ):]
+        keys =list(ch.order)[-min(MAX_SEGS, 400):]
         segs =[ch .segments [k ]for k in keys if k in ch .segments ]
     if not segs :
         return None 
