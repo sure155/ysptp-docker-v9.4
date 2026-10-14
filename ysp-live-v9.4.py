@@ -2727,7 +2727,7 @@ def jce_refresh (ch ):
         added =0 
         is_init =not ch .order 
         if is_init :
-            init_segs =segs [-200 :]if len (segs )>200 else segs 
+            init_segs =segs [-MAX_SEGS :]if len (segs )>MAX_SEGS else segs 
             for dur ,pdt ,url in init_segs :
                 key =seg_key (url ,pdt )
                 ch .seq +=1 
